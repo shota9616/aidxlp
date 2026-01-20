@@ -85,21 +85,18 @@
   </header>
 
   <!-- ファーストビュー -->
-  <section class="gradient-primary min-h-screen flex items-center pt-20 pb-12 relative overflow-hidden">
+  <section class="min-h-screen flex items-center pt-20 pb-12 relative overflow-hidden">
     <!-- 背景画像 -->
     <div class="absolute inset-0">
-      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1920&q=80" alt="" class="w-full h-full object-cover opacity-20">
+      <img src="hero-bg.jpg" alt="" class="w-full h-full object-cover object-top">
     </div>
-    <div class="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/80 to-primaryDark/95"></div>
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-20 left-10 w-32 h-32 border-4 border-white rounded-full"></div>
-      <div class="absolute bottom-20 right-10 w-48 h-48 border-4 border-white rounded-full"></div>
-      <div class="absolute top-1/2 right-1/4 w-24 h-24 border-4 border-white rotate-45"></div>
-    </div>
+    <!-- オーバーレイ（左から右へグラデーション） -->
+    <div class="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/40"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent"></div>
     <div class="max-w-6xl mx-auto px-4 relative z-10">
-      <div class="text-center text-white">
+      <div class="md:max-w-2xl text-white">
         <!-- 実績バッジ -->
-        <div class="flex flex-wrap justify-center gap-3 mb-8">
+        <div class="flex flex-wrap gap-3 mb-8">
           <span class="badge-gold text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg">
             導入実績 20社突破
           </span>
@@ -113,26 +110,26 @@
 
         <!-- メインコピー -->
         <p class="text-lg md:text-xl mb-4 opacity-90">DX化に本腰を入れたい中小企業様へ</p>
-        <h1 class="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 drop-shadow-lg">
           生成AI・SNSを<br>
           <span class="text-yellow-300">「知る」「使う」「創る」</span><br>
           実践型研修
         </h1>
-        <p class="text-lg md:text-2xl mb-8 opacity-90">
+        <p class="text-lg md:text-2xl mb-8 opacity-90 drop-shadow">
           eラーニングと対面研修を選べる柔軟なスタイル。<br>
           最新AIを比較体験しながら、<br class="md:hidden">
           <span class="font-bold">明日から使える</span>スキルを習得
         </p>
 
         <!-- バッジ -->
-        <div class="flex flex-wrap justify-center gap-3 mb-8">
-          <span class="bg-white/15 border border-white/30 px-4 py-2 text-sm rounded">助成金で最大75%OFF</span>
-          <span class="bg-white/15 border border-white/30 px-4 py-2 text-sm rounded">eラーニング対応</span>
-          <span class="bg-white/15 border border-white/30 px-4 py-2 text-sm rounded">カスタマイズ可能</span>
+        <div class="flex flex-wrap gap-3 mb-8">
+          <span class="bg-black/30 backdrop-blur border border-white/30 px-4 py-2 text-sm rounded">助成金で最大75%OFF</span>
+          <span class="bg-black/30 backdrop-blur border border-white/30 px-4 py-2 text-sm rounded">eラーニング対応</span>
+          <span class="bg-black/30 backdrop-blur border border-white/30 px-4 py-2 text-sm rounded">カスタマイズ可能</span>
         </div>
 
         <!-- CTA -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <div class="flex flex-col sm:flex-row gap-4 mb-8">
           <a href="#contact" class="cta-pulse bg-accent hover:bg-orange-600 text-white text-xl font-bold py-5 px-10 rounded-full shadow-2xl transition inline-flex items-center justify-center gap-2">
             <span>まずは無料で相談する</span>
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
@@ -143,11 +140,11 @@
         </p>
 
         <!-- AI ロゴ -->
-        <div class="mt-12 flex flex-wrap justify-center items-center gap-6 opacity-90">
+        <div class="mt-12 flex flex-wrap items-center gap-4 opacity-90">
           <span class="text-sm">活用AI:</span>
-          <div class="bg-white/20 backdrop-blur px-4 py-2 rounded-lg">ChatGPT</div>
-          <div class="bg-white/20 backdrop-blur px-4 py-2 rounded-lg">Claude</div>
-          <div class="bg-white/20 backdrop-blur px-4 py-2 rounded-lg">Gemini</div>
+          <div class="bg-black/30 backdrop-blur px-4 py-2 rounded-lg">ChatGPT</div>
+          <div class="bg-black/30 backdrop-blur px-4 py-2 rounded-lg">Claude</div>
+          <div class="bg-black/30 backdrop-blur px-4 py-2 rounded-lg">Gemini</div>
         </div>
       </div>
     </div>
