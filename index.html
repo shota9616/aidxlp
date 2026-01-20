@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>生成AI・SNS研修 | 株式会社KMST - 中小企業のDX推進を支援</title>
-  <meta name="description" content="eラーニングと対面研修を選べる実践型の生成AI・SNS研修。最新AI（ChatGPT o3・Claude・Gemini）対応。助成金で最大75%OFF。導入20社、満足度95%。">
+  <meta name="description" content="eラーニングと対面研修を選べる実践型の生成AI・SNS研修。最新AI（ChatGPT・Claude・Gemini）対応。助成金で最大75%OFF。導入20社、満足度95%。">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,8 @@
       theme: {
         extend: {
           colors: {
-            primary: '#E53935',
-            primaryDark: '#C62828',
+            primary: '#E31B23',
+            primaryDark: '#B8151B',
             accent: '#FF6B35',
             accentGreen: '#28A745',
             dark: '#1A1A1A',
@@ -31,7 +31,7 @@
   </script>
   <style>
     html { scroll-behavior: smooth; }
-    .gradient-primary { background: linear-gradient(145deg, #E53935 0%, #C62828 100%); }
+    .gradient-primary { background: linear-gradient(135deg, #E31B23 0%, #B8151B 100%); }
     .gradient-dark { background: linear-gradient(180deg, #1A1A1A 0%, #2D2D2D 100%); }
     .badge-gold { background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%); }
     .cta-pulse { animation: pulse 2s infinite; }
@@ -46,7 +46,7 @@
       display: block;
       width: 60px;
       height: 4px;
-      background: #E53935;
+      background: #E31B23;
       margin: 16px auto 0;
     }
     .check-list li::before {
@@ -64,7 +64,7 @@
       align-items: center;
       justify-content: center;
       font-weight: 700;
-      color: #E53935;
+      color: #E31B23;
       border: 1px solid #E0E0E0;
       flex-shrink: 0;
     }
@@ -73,18 +73,16 @@
 <body class="font-sans text-dark bg-white">
 
   <!-- ヘッダー -->
-  <header class="fixed top-0 left-0 right-0 bg-primary z-50">
+  <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15 75L50 15L85 75H15Z" stroke="white" stroke-width="4" fill="none"/>
-          <path d="M28 62L50 28L72 62H28Z" stroke="white" stroke-width="3" fill="none"/>
-          <path d="M38 52L50 35L62 52H38Z" stroke="white" stroke-width="2" fill="none"/>
-        </svg>
-        <span class="text-white font-bold text-xl tracking-wide">K<span class="text-lg">M</span>ST</span>
+        <div class="w-10 h-10 bg-primary rounded flex items-center justify-center">
+          <span class="text-white font-bold text-lg">K</span>
+        </div>
+        <span class="font-bold text-xl tracking-wide">KMST</span>
       </div>
-      <a href="#contact" class="hidden md:inline-block bg-white text-primary font-bold py-2 px-6 hover:bg-gray-100 transition">
-        お問い合わせ
+      <a href="#contact" class="hidden md:inline-block bg-accent hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full transition">
+        無料相談はこちら
       </a>
     </div>
   </header>
@@ -92,15 +90,14 @@
   <!-- ファーストビュー -->
   <section class="gradient-primary min-h-screen flex items-center pt-20 pb-12 relative overflow-hidden">
     <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-20 right-[-50px] w-[300px] h-[300px] border border-white rounded-full"></div>
-      <div class="absolute bottom-20 left-[-50px] w-[200px] h-[200px] border border-white rounded-full"></div>
+      <div class="absolute top-20 left-10 w-32 h-32 border-4 border-white rounded-full"></div>
+      <div class="absolute bottom-20 right-10 w-48 h-48 border-4 border-white rounded-full"></div>
+      <div class="absolute top-1/2 right-1/4 w-24 h-24 border-4 border-white rotate-45"></div>
     </div>
     <div class="max-w-6xl mx-auto px-4 relative z-10">
-      <div class="text-white">
-        <p class="text-sm md:text-base mb-4 opacity-80 tracking-widest">Empowering Your Workforce with Generative AI</p>
-
+      <div class="text-center text-white">
         <!-- 実績バッジ -->
-        <div class="flex flex-wrap gap-3 mb-8">
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
           <span class="badge-gold text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg">
             導入実績 20社突破
           </span>
@@ -113,28 +110,43 @@
         </div>
 
         <!-- メインコピー -->
+        <p class="text-lg md:text-xl mb-4 opacity-90">DX化に本腰を入れたい中小企業様へ</p>
         <h1 class="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
           生成AI・SNSを<br>
-          <span class="inline-block bg-white text-primary px-4 py-1 my-2">「知る」「使う」「創る」</span><br>
+          <span class="text-yellow-300">「知る」「使う」「創る」</span><br>
           実践型研修
         </h1>
-        <p class="text-base md:text-xl mb-8 opacity-90 max-w-xl leading-relaxed">
+        <p class="text-lg md:text-2xl mb-8 opacity-90">
           eラーニングと対面研修を選べる柔軟なスタイル。<br>
-          最新AIモデルを比較体験しながら、貴社業務に活用できる研修をご提供します。
+          最新AIを比較体験しながら、<br class="md:hidden">
+          <span class="font-bold">明日から使える</span>スキルを習得
         </p>
 
         <!-- バッジ -->
-        <div class="flex flex-wrap gap-3 mb-8">
-          <span class="bg-white/15 border border-white/30 px-4 py-2 text-sm">助成金で最大75%OFF</span>
-          <span class="bg-white/15 border border-white/30 px-4 py-2 text-sm">eラーニング対応</span>
-          <span class="bg-white/15 border border-white/30 px-4 py-2 text-sm">カスタマイズ可能</span>
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+          <span class="bg-white/15 border border-white/30 px-4 py-2 text-sm rounded">助成金で最大75%OFF</span>
+          <span class="bg-white/15 border border-white/30 px-4 py-2 text-sm rounded">eラーニング対応</span>
+          <span class="bg-white/15 border border-white/30 px-4 py-2 text-sm rounded">カスタマイズ可能</span>
         </div>
 
         <!-- CTA -->
-        <a href="#contact" class="cta-pulse inline-flex items-center gap-2 bg-white text-primary text-lg font-bold py-4 px-8 hover:bg-gray-100 transition shadow-xl">
-          <span>まずは相談する</span>
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-        </a>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <a href="#contact" class="cta-pulse bg-accent hover:bg-orange-600 text-white text-xl font-bold py-5 px-10 rounded-full shadow-2xl transition inline-flex items-center justify-center gap-2">
+            <span>まずは無料で相談する</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <p class="text-sm opacity-80">
+          ※ 助成金で最大75%オフも可能 ｜ 申請サポート無償
+        </p>
+
+        <!-- AI ロゴ -->
+        <div class="mt-12 flex flex-wrap justify-center items-center gap-6 opacity-90">
+          <span class="text-sm">活用AI:</span>
+          <div class="bg-white/20 backdrop-blur px-4 py-2 rounded-lg">ChatGPT</div>
+          <div class="bg-white/20 backdrop-blur px-4 py-2 rounded-lg">Claude</div>
+          <div class="bg-white/20 backdrop-blur px-4 py-2 rounded-lg">Gemini</div>
+        </div>
       </div>
     </div>
   </section>
@@ -142,31 +154,37 @@
   <!-- お悩み共感セクション -->
   <section class="py-20 bg-gray-50">
     <div class="max-w-5xl mx-auto px-4">
-      <p class="text-center text-primary text-sm font-bold tracking-widest mb-3">CHALLENGES</p>
-      <h2 class="text-2xl md:text-4xl font-bold text-center mb-12">
-        こんな課題、ありませんか？
+      <h2 class="text-2xl md:text-4xl font-bold text-center mb-4">
+        こんな<span class="text-primary">お悩み</span>ありませんか？
       </h2>
+      <p class="text-center text-gray-600 mb-12">多くの中小企業様が同じ課題を抱えています</p>
 
-      <div class="grid md:grid-cols-3 gap-5 mb-12">
-        <div class="bg-white p-6 border-l-4 border-primary hover-lift">
-          <p class="text-5xl font-black text-primary/15 mb-3">01</p>
-          <p class="font-semibold leading-relaxed">生成AIやSNSを学ばせたいが<br><span class="text-primary">何から始めればいいかわからない</span></p>
+      <div class="grid md:grid-cols-2 gap-6 mb-12">
+        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary hover-lift">
+          <p class="text-lg"><span class="text-primary font-bold text-2xl mr-2">×</span>ChatGPTを契約したが、<span class="font-bold">社員が使いこなせていない</span></p>
         </div>
-        <div class="bg-white p-6 border-l-4 border-primary hover-lift">
-          <p class="text-5xl font-black text-primary/15 mb-3">02</p>
-          <p class="font-semibold leading-relaxed">研修をしても<br><span class="text-primary">現場で実際に使われない</span></p>
+        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary hover-lift">
+          <p class="text-lg"><span class="text-primary font-bold text-2xl mr-2">×</span>AIで<span class="font-bold">何ができるのか分からない</span>まま時間だけが過ぎている</p>
         </div>
-        <div class="bg-white p-6 border-l-4 border-primary hover-lift">
-          <p class="text-5xl font-black text-primary/15 mb-3">03</p>
-          <p class="font-semibold leading-relaxed">助成金を活用したいが<br><span class="text-primary">手続きが複雑で進まない</span></p>
+        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary hover-lift">
+          <p class="text-lg"><span class="text-primary font-bold text-2xl mr-2">×</span>競合他社がAI活用を進めていて<span class="font-bold">焦りを感じている</span></p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary hover-lift">
+          <p class="text-lg"><span class="text-primary font-bold text-2xl mr-2">×</span>研修を検討したいが、<span class="font-bold">費用対効果が心配</span>で踏み出せない</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary hover-lift">
+          <p class="text-lg"><span class="text-primary font-bold text-2xl mr-2">×</span>一般的な研修では<span class="font-bold">自社業務に落とし込めない</span></p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-primary hover-lift">
+          <p class="text-lg"><span class="text-primary font-bold text-2xl mr-2">×</span>AIのリスク（著作権・情報漏洩）が<span class="font-bold">よく分からず不安</span></p>
         </div>
       </div>
 
-      <div class="bg-white border-t-4 border-primary p-8 text-center max-w-2xl mx-auto">
-        <p class="text-lg font-semibold">
-          KMSTは、その「わからない」を責めません。<br>
-          <span class="text-primary">むしろ、そこを出発点にします。</span>
+      <div class="bg-primary/5 border-2 border-primary rounded-2xl p-8 text-center">
+        <p class="text-xl md:text-2xl font-bold text-primary mb-2">
+          その悩み、KMSTの生成AI研修で解決できます
         </p>
+        <p class="text-gray-600">「知る」「使う」「創る」の3ステップで、確実にAI活用人材を育成</p>
       </div>
     </div>
   </section>
@@ -174,91 +192,241 @@
   <!-- 選べる研修スタイル -->
   <section class="py-20 bg-white">
     <div class="max-w-5xl mx-auto px-4">
-      <p class="text-center text-primary text-sm font-bold tracking-widest mb-3">TRAINING STYLE</p>
       <h2 class="text-2xl md:text-4xl font-bold text-center section-title mb-12">
-        選べる2つの研修スタイル
+        選べる<span class="text-primary">2つの研修スタイル</span>
       </h2>
 
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="border-2 border-gray-200 p-8 text-center hover:border-primary hover:shadow-lg transition hover-lift">
-          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
-            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift border-2 border-transparent hover:border-primary transition">
+          <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">eラーニング</h3>
+          <h3 class="text-xl font-bold mb-4">eラーニング</h3>
           <p class="text-gray-600 leading-relaxed">いつでも・どこでも・何度でも学べるオンライン教材。社員のペースに合わせた学習が可能。進捗管理・修了証発行にも対応。</p>
         </div>
-        <div class="border-2 border-gray-200 p-8 text-center hover:border-primary hover:shadow-lg transition hover-lift">
-          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
-            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift border-2 border-transparent hover:border-primary transition">
+          <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">対面研修</h3>
+          <h3 class="text-xl font-bold mb-4">対面研修</h3>
           <p class="text-gray-600 leading-relaxed">講師によるリアルタイム研修。その場で質問・フィードバックできるから吸収率が違います。オンライン対面も可能。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 研修ラインナップ -->
-  <section class="py-20 gradient-dark text-white">
+  <!-- 選ばれる3つの理由 -->
+  <section class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
-      <p class="text-center text-primary text-sm font-bold tracking-widest mb-3">PROGRAMS</p>
-      <h2 class="text-2xl md:text-4xl font-bold text-center mb-12">
-        研修ラインナップ
+      <h2 class="text-2xl md:text-4xl font-bold text-center section-title mb-16">
+        KMSTが<span class="text-primary">選ばれる3つの理由</span>
       </h2>
 
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- 理由1 -->
+        <div class="bg-white rounded-2xl p-8 text-center hover-lift">
+          <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-white text-3xl font-black">1</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4">最新AIモデルを<br>網羅的に比較体験</h3>
+          <p class="text-gray-600 mb-4">
+            ChatGPT・Claude・Geminiを同一条件で比較。どのAIが自社に最適か、実際に触って判断できます。
+          </p>
+          <div class="flex flex-wrap justify-center gap-2">
+            <span class="bg-dark text-white text-xs px-3 py-1 rounded-full">ChatGPT</span>
+            <span class="bg-dark text-white text-xs px-3 py-1 rounded-full">Claude</span>
+            <span class="bg-dark text-white text-xs px-3 py-1 rounded-full">Gemini</span>
+          </div>
+        </div>
+
+        <!-- 理由2 -->
+        <div class="bg-white rounded-2xl p-8 text-center hover-lift">
+          <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-white text-3xl font-black">2</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4">貴社業務に<br>カスタマイズ可能</h3>
+          <p class="text-gray-600 mb-4">
+            営業・管理・人事・情報システムなど、実際の業務課題に合わせて研修内容をカスタム。「使える」研修を提供します。
+          </p>
+          <ul class="text-sm text-left text-gray-600 check-list">
+            <li>業種別ケーススタディ</li>
+            <li>自社資料を使った実習</li>
+            <li>実務に即したプロンプト集</li>
+          </ul>
+        </div>
+
+        <!-- 理由3 -->
+        <div class="bg-white rounded-2xl p-8 text-center hover-lift">
+          <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-white text-3xl font-black">3</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4">助成金申請を<br>無償でサポート</h3>
+          <p class="text-gray-600 mb-4">
+            人材開発支援助成金で<span class="font-bold text-primary">最大75%オフ</span>。面倒な申請手続きも提携社労士と連携してサポートします。
+          </p>
+          <div class="bg-yellow-50 border border-yellow-400 rounded-lg p-3">
+            <p class="text-sm font-bold text-yellow-800">
+              例）35万円×3人 → 実質26.25万円
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 中間CTA -->
+  <section class="py-12 gradient-primary">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-white text-lg mb-6">
+        まずはお気軽にご相談ください。貴社に最適なプランをご提案します。
+      </p>
+      <a href="#contact" class="cta-pulse inline-flex items-center gap-2 bg-accent hover:bg-orange-600 text-white text-xl font-bold py-5 px-10 rounded-full shadow-2xl transition">
+        <span>無料相談を申し込む</span>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- 研修内容 -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-4xl font-bold text-center section-title mb-6">
+        研修内容・カリキュラム
+      </h2>
+      <p class="text-center text-gray-600 mb-12">「知る」「使う」「創る」の3ステップで確実に習得</p>
+
       <!-- 生成AI研修 -->
-      <div class="mb-12">
-        <h3 class="text-xl font-bold mb-6 pb-3 border-b-2 border-primary inline-block">生成AI導入研修</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div class="bg-white/10 p-6 rounded-lg">
-            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 mb-3">STEP 1｜知る</span>
-            <h4 class="font-bold mb-2">生成AIリテラシー基礎<br>＋AI倫理</h4>
-            <p class="text-sm text-white/70 mb-3">o3・Claude・Geminiを同条件で比較体験。ハルシネーション・著作権・個人情報などリスク面も網羅。</p>
-            <p class="text-sm text-primary">2時間</p>
+      <h3 class="text-xl font-bold mb-6 pl-4 border-l-4 border-primary">生成AI導入研修</h3>
+
+      <!-- Step1 -->
+      <div class="mb-8">
+        <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden">
+          <div class="gradient-dark text-white p-6 flex items-center gap-4">
+            <span class="bg-white text-dark font-black text-xl w-12 h-12 rounded-full flex items-center justify-center">1</span>
+            <div>
+              <p class="text-sm opacity-80">STEP 1 ｜ 知る</p>
+              <h3 class="text-xl font-bold">生成AIリテラシー基礎＋AI倫理</h3>
+            </div>
+            <span class="ml-auto bg-primary px-4 py-1 rounded-full text-sm">2時間</span>
           </div>
-          <div class="bg-white/10 p-6 rounded-lg">
-            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 mb-3">STEP 2｜使う</span>
-            <h4 class="font-bold mb-2">生成AI<br>業務活用実践</h4>
-            <p class="text-sm text-white/70 mb-3">プロンプト設計からZapier/Make連携まで。営業・管理・人事など職種別ケース演習で即戦力化。</p>
-            <p class="text-sm text-primary">5時間</p>
+          <div class="p-6">
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-white rounded-lg p-4 border">
+                <p class="font-bold text-primary mb-2">基礎理解</p>
+                <p class="text-sm text-gray-600">ChatGPT/Claude/Geminiの違い・仕組みを理解</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 border">
+                <p class="font-bold text-primary mb-2">リスク・法務</p>
+                <p class="text-sm text-gray-600">ハルシネーション、著作権、個人情報保護を学習</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 border">
+                <p class="font-bold text-primary mb-2">デモ体験</p>
+                <p class="text-sm text-gray-600">同一プロンプトで3モデルを比較体験</p>
+              </div>
+            </div>
           </div>
-          <div class="bg-white/10 p-6 rounded-lg">
-            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 mb-3">STEP 3-A｜創る</span>
-            <h4 class="font-bold mb-2">ノーコード<br>ミニアプリ開発編</h4>
-            <p class="text-sm text-white/70 mb-3">Bubble+o3 APIでFAQボット作成。RAG活用やスプリント開発で、成果物を持ち帰れる実践ワークショップ。</p>
-            <p class="text-sm text-primary">5時間</p>
+        </div>
+      </div>
+
+      <!-- Step2 -->
+      <div class="mb-8">
+        <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden">
+          <div class="gradient-dark text-white p-6 flex items-center gap-4">
+            <span class="bg-white text-dark font-black text-xl w-12 h-12 rounded-full flex items-center justify-center">2</span>
+            <div>
+              <p class="text-sm opacity-80">STEP 2 ｜ 使う</p>
+              <h3 class="text-xl font-bold">生成AI業務活用実践</h3>
+            </div>
+            <span class="ml-auto bg-primary px-4 py-1 rounded-full text-sm">5時間</span>
           </div>
-          <div class="bg-white/10 p-6 rounded-lg">
-            <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 mb-3">STEP 3-B｜創る</span>
-            <h4 class="font-bold mb-2">クリエイティブ<br>活用編</h4>
-            <p class="text-sm text-white/70 mb-3">Midjourney/SDXL/Fireflyを使った画像生成。建築パース・商品画像・SNSバナーなど実制作。</p>
-            <p class="text-sm text-primary">5時間</p>
+          <div class="p-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="bg-white rounded-lg p-4 border">
+                <p class="font-bold text-primary mb-2">プロンプト応用</p>
+                <p class="text-sm text-gray-600">Role/Few-shot/Chain-of-Thought</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 border">
+                <p class="font-bold text-primary mb-2">モデル比較</p>
+                <p class="text-sm text-gray-600">精度・速度・コスト・プラグイン</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 border">
+                <p class="font-bold text-primary mb-2">ノーコード自動化</p>
+                <p class="text-sm text-gray-600">Zapier/Makeで業務自動化</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 border">
+                <p class="font-bold text-primary mb-2">ケース演習</p>
+                <p class="text-sm text-gray-600">営業・管理・人事で実践</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step3 -->
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Step3-A -->
+        <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden">
+          <div class="gradient-dark text-white p-6">
+            <div class="flex items-center gap-4 mb-2">
+              <span class="bg-white text-dark font-black text-lg w-10 h-10 rounded-full flex items-center justify-center">3A</span>
+              <span class="bg-primary px-4 py-1 rounded-full text-sm">5時間</span>
+            </div>
+            <p class="text-sm opacity-80">STEP 3-A ｜ 創る</p>
+            <h3 class="text-lg font-bold">ノーコード・ミニアプリ開発編</h3>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-2 text-sm text-gray-600 mb-4">
+              <li class="flex items-start gap-2"><span class="text-primary">●</span>DX要件定義シートの作成</li>
+              <li class="flex items-start gap-2"><span class="text-primary">●</span>RAGの活用（入門編）</li>
+              <li class="flex items-start gap-2"><span class="text-primary">●</span>FAQボット作成（Bubble + API）</li>
+              <li class="flex items-start gap-2"><span class="text-primary">●</span>スプリント開発演習</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step3-B -->
+        <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden">
+          <div class="gradient-dark text-white p-6">
+            <div class="flex items-center gap-4 mb-2">
+              <span class="bg-white text-dark font-black text-lg w-10 h-10 rounded-full flex items-center justify-center">3B</span>
+              <span class="bg-primary px-4 py-1 rounded-full text-sm">5時間</span>
+            </div>
+            <p class="text-sm opacity-80">STEP 3-B ｜ 創る</p>
+            <h3 class="text-lg font-bold">クリエイティブ活用編</h3>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-2 text-sm text-gray-600 mb-4">
+              <li class="flex items-start gap-2"><span class="text-primary">●</span>画像生成AI比較（Midjourney/SDXL/Firefly）</li>
+              <li class="flex items-start gap-2"><span class="text-primary">●</span>プロンプトレシピ作成</li>
+              <li class="flex items-start gap-2"><span class="text-primary">●</span>デザイン実習（パース/商品画像/バナー）</li>
+              <li class="flex items-start gap-2"><span class="text-primary">●</span>二次加工（Canva/Photoshop）</li>
+            </ul>
           </div>
         </div>
       </div>
 
       <!-- SNS研修 -->
-      <div>
-        <h3 class="text-xl font-bold mb-6 pb-3 border-b-2 border-primary inline-block">SNS・YouTube活用研修</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <div class="flex items-center gap-3 bg-white/10 px-4 py-3 rounded-lg">
-            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+      <h3 class="text-xl font-bold mb-6 pl-4 border-l-4 border-primary">SNS・YouTube活用研修</h3>
+      <div class="bg-gray-50 rounded-2xl p-6 mb-12">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="flex items-center gap-3 bg-white px-4 py-3 rounded-lg border">
+            <svg class="w-5 h-5 text-accentGreen flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
             <span class="text-sm">各SNSの特性と使い分け</span>
           </div>
-          <div class="flex items-center gap-3 bg-white/10 px-4 py-3 rounded-lg">
-            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          <div class="flex items-center gap-3 bg-white px-4 py-3 rounded-lg border">
+            <svg class="w-5 h-5 text-accentGreen flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
             <span class="text-sm">コンテンツ企画・投稿設計</span>
           </div>
-          <div class="flex items-center gap-3 bg-white/10 px-4 py-3 rounded-lg">
-            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          <div class="flex items-center gap-3 bg-white px-4 py-3 rounded-lg border">
+            <svg class="w-5 h-5 text-accentGreen flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
             <span class="text-sm">運用体制の構築支援</span>
           </div>
-          <div class="flex items-center gap-3 bg-white/10 px-4 py-3 rounded-lg">
-            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          <div class="flex items-center gap-3 bg-white px-4 py-3 rounded-lg border">
+            <svg class="w-5 h-5 text-accentGreen flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
             <span class="text-sm">YouTube動画制作の基礎</span>
           </div>
         </div>
@@ -267,174 +435,223 @@
   </section>
 
   <!-- 定額制DX講座一覧 -->
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
-      <p class="text-center text-primary text-sm font-bold tracking-widest mb-3">CURRICULUM</p>
       <h2 class="text-2xl md:text-4xl font-bold text-center section-title mb-12">
         定額制DX講座一覧
       </h2>
 
       <!-- 生成AI・対話型AI -->
-      <div class="mb-10">
-        <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary flex items-center gap-3">
-          <span class="w-8 h-8 bg-primary/10 rounded flex items-center justify-center">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
-          </span>
-          生成AI・対話型AI
-        </h3>
+      <div class="mb-8">
+        <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary">生成AI・対話型AI</h3>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">C</span>
-            <span class="text-sm font-medium">ChatGPT講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">ChatGPT講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">C</span>
-            <span class="text-sm font-medium">Claude講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Claude講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">G</span>
-            <span class="text-sm font-medium">Gemini講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Gemini講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">P</span>
-            <span class="text-sm font-medium">Perplexity講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Perplexity講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">M</span>
-            <span class="text-sm font-medium">Microsoft Copilot講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Microsoft Copilot講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">N</span>
-            <span class="text-sm font-medium">NotebookLM講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">NotebookLM講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">F</span>
-            <span class="text-sm font-medium">Felo講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Felo講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">G</span>
-            <span class="text-sm font-medium">Genspark講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Genspark講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- 画像・動画生成AI -->
-      <div class="mb-10">
-        <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary flex items-center gap-3">
-          <span class="w-8 h-8 bg-primary/10 rounded flex items-center justify-center">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          </span>
-          画像・動画生成AI
-        </h3>
+      <div class="mb-8">
+        <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary">画像・動画生成AI</h3>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">M</span>
-            <span class="text-sm font-medium">Midjourney講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Midjourney講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">I</span>
-            <span class="text-sm font-medium">ImageFX講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">ImageFX講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">V</span>
-            <span class="text-sm font-medium">Veo3講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Veo3講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">C</span>
-            <span class="text-sm font-medium">Canva講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Canva講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- 開発・自動化ツール -->
-      <div class="mb-10">
-        <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary flex items-center gap-3">
-          <span class="w-8 h-8 bg-primary/10 rounded flex items-center justify-center">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          </span>
-          開発・自動化ツール
-        </h3>
+      <div class="mb-8">
+        <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary">開発・自動化ツール</h3>
         <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">D</span>
-            <span class="text-sm font-medium">Dify講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Dify講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">C</span>
-            <span class="text-sm font-medium">Cursor講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Cursor講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">M</span>
-            <span class="text-sm font-medium">Manus講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Manus講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">n</span>
-            <span class="text-sm font-medium">n8n講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">n8n講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">v</span>
-            <span class="text-sm font-medium">v0講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">v0講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- デザイン・資料作成 -->
-      <div class="mb-10">
-        <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary flex items-center gap-3">
-          <span class="w-8 h-8 bg-primary/10 rounded flex items-center justify-center">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          </span>
-          デザイン・資料作成
-        </h3>
+      <div class="mb-8">
+        <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary">デザイン・資料作成</h3>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">F</span>
-            <span class="text-sm font-medium">Figma講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Figma講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">N</span>
-            <span class="text-sm font-medium">Notion講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Notion講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">G</span>
-            <span class="text-sm font-medium">Gamma講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Gamma講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon text-xs">イ</span>
-            <span class="text-sm font-medium">イルシル講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">イルシル講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- SNS・動画マーケティング -->
-      <div class="mb-10">
-        <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary flex items-center gap-3">
-          <span class="w-8 h-8 bg-primary/10 rounded flex items-center justify-center">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/></svg>
-          </span>
-          SNS・動画マーケティング
-        </h3>
+      <div class="mb-8">
+        <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary">SNS・動画マーケティング</h3>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">I</span>
-            <span class="text-sm font-medium">Instagram講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">Instagram講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">T</span>
-            <span class="text-sm font-medium">TikTok講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">TikTok講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">X</span>
-            <span class="text-sm font-medium">X講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">X講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
-          <div class="bg-gray-50 px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-white hover:border-primary border border-transparent transition">
+          <div class="bg-white px-4 py-3 rounded-lg flex items-center gap-3 hover-lift border">
             <span class="tool-icon">Y</span>
-            <span class="text-sm font-medium">YouTube講座</span>
+            <div class="flex-1">
+              <span class="text-sm font-medium block">YouTube講座</span>
+              <span class="text-xs text-primary font-bold">¥26,400</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="bg-primary/5 rounded-lg p-6 text-center">
+      <div class="bg-primary/5 rounded-xl p-6 text-center">
         <p class="text-gray-600">
           各講座は<strong class="text-primary">定額制</strong>のため、受講人数を気にせず社内全体で学習を進められます。<br>
           詳しい内容・料金はお気軽にお問い合わせください。
@@ -443,81 +660,9 @@
     </div>
   </section>
 
-  <!-- 対象者別のゴール -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <p class="text-center text-primary text-sm font-bold tracking-widest mb-3">TARGET</p>
-      <h2 class="text-2xl md:text-4xl font-bold text-center section-title mb-12">
-        対象者別のゴール
-      </h2>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white border border-gray-200 p-8 text-center hover-lift">
-          <div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-            </svg>
-          </div>
-          <h3 class="text-lg font-bold mb-2">一般社員</h3>
-          <p class="text-primary font-semibold text-sm mb-3">自身の業務効率化</p>
-          <p class="text-gray-600 text-sm leading-relaxed">議事録作成、リサーチ、アイデア出しなど、明日から使えるスキルを習得。</p>
-        </div>
-        <div class="bg-white border border-gray-200 p-8 text-center hover-lift">
-          <div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
-            </svg>
-          </div>
-          <h3 class="text-lg font-bold mb-2">管理職</h3>
-          <p class="text-primary font-semibold text-sm mb-3">チームの生産性向上</p>
-          <p class="text-gray-600 text-sm leading-relaxed">部下のAI活用を促進しながら、業務設計・マネジメント力を強化。</p>
-        </div>
-        <div class="bg-white border border-gray-200 p-8 text-center hover-lift">
-          <div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-            </svg>
-          </div>
-          <h3 class="text-lg font-bold mb-2">経営層</h3>
-          <p class="text-primary font-semibold text-sm mb-3">経営判断力の向上</p>
-          <p class="text-gray-600 text-sm leading-relaxed">事業戦略・意思決定におけるAI活用の視点と可能性を理解。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 選ばれる3つの理由 -->
+  <!-- 料金プラン -->
   <section class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <p class="text-center text-primary text-sm font-bold tracking-widest mb-3">WHY KMST</p>
-      <h2 class="text-2xl md:text-4xl font-bold text-center section-title mb-12">
-        選ばれる3つの理由
-      </h2>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-gray-50 p-8 text-center border-b-4 border-primary">
-          <p class="text-5xl font-black text-primary mb-4">01</p>
-          <h3 class="text-lg font-bold mb-3">実践的</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">貴社の業務課題に合わせてカスタマイズ。汎用的な説明ではなく「何に・どう使うか」まで落とし込みます。</p>
-        </div>
-        <div class="bg-gray-50 p-8 text-center border-b-4 border-primary">
-          <p class="text-5xl font-black text-primary mb-4">02</p>
-          <h3 class="text-lg font-bold mb-3">柔軟</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">eラーニングと対面研修を組み合わせ可能。社員のスキルレベルや業務状況に合わせて最適な形を選べます。</p>
-        </div>
-        <div class="bg-gray-50 p-8 text-center border-b-4 border-primary">
-          <p class="text-5xl font-black text-primary mb-4">03</p>
-          <h3 class="text-lg font-bold mb-3">リーズナブル</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">助成金活用で最大75%の経費助成。申請手続きもサポートするので、手離れよく導入できます。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 料金プラン -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <p class="text-center text-primary text-sm font-bold tracking-widest mb-3">PRICING</p>
       <h2 class="text-2xl md:text-4xl font-bold text-center section-title mb-12">
         料金プラン
       </h2>
@@ -525,7 +670,7 @@
       <!-- 生成AI研修 -->
       <div class="mb-12">
         <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary">生成AI導入研修（税別・10名まで）</h3>
-        <div class="bg-white overflow-x-auto mb-4">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-4">
           <table class="w-full">
             <thead>
               <tr class="bg-dark text-white">
@@ -559,30 +704,39 @@
           </table>
         </div>
 
-        <div class="bg-gray-100 p-6 border-l-4 border-primary">
-          <h4 class="font-bold mb-4">パッケージ割引</h4>
-          <div class="grid md:grid-cols-3 gap-3">
-            <div class="bg-white p-4 flex justify-between items-center">
-              <span class="font-semibold text-sm">基礎＋実践</span>
-              <span><span class="font-bold text-primary text-lg">150,000円</span><span class="text-gray-400 line-through text-sm ml-2">170,000円</span></span>
-            </div>
-            <div class="bg-white p-4 flex justify-between items-center">
-              <span class="font-semibold text-sm">基礎＋実践＋応用</span>
-              <span><span class="font-bold text-primary text-lg">350,000円</span><span class="text-gray-400 line-through text-sm ml-2">370,000円</span></span>
-            </div>
-            <div class="bg-white p-4 flex justify-between items-center">
-              <span class="font-semibold text-sm">フルパッケージ</span>
-              <span><span class="font-bold text-primary text-lg">550,000円</span><span class="text-gray-400 line-through text-sm ml-2">570,000円</span></span>
-            </div>
+        <!-- パッケージ料金 -->
+        <h4 class="font-bold mb-4">お得なパッケージプラン</h4>
+        <div class="grid md:grid-cols-3 gap-6 mb-4">
+          <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover-lift">
+            <p class="text-sm text-gray-500 mb-2">STEP 1 + 2</p>
+            <h4 class="font-bold text-lg mb-3">基礎＋実践パッケージ</h4>
+            <p class="text-gray-400 line-through text-sm">通常 17万円</p>
+            <p class="text-3xl font-black text-primary mb-2">15<span class="text-lg">万円</span><span class="text-sm text-gray-500 font-normal ml-2">(税別)</span></p>
+            <span class="inline-block bg-red-100 text-red-600 text-xs font-bold px-3 py-1 rounded-full">2万円OFF</span>
+          </div>
+          <div class="bg-primary text-white rounded-2xl p-6 hover-lift relative">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-dark text-xs font-bold px-4 py-1 rounded-full">人気No.1</span>
+            <p class="text-sm opacity-80 mb-2">STEP 1 + 2 + 3A or 3B</p>
+            <h4 class="font-bold text-lg mb-3">基礎＋実践＋応用<br>パッケージ</h4>
+            <p class="opacity-60 line-through text-sm">通常 37万円</p>
+            <p class="text-3xl font-black mb-2">35<span class="text-lg">万円</span><span class="text-sm font-normal ml-2 opacity-80">(税別)</span></p>
+            <span class="inline-block bg-yellow-400 text-dark text-xs font-bold px-3 py-1 rounded-full">2万円OFF</span>
+          </div>
+          <div class="bg-white border-2 border-gray-200 rounded-2xl p-6 hover-lift">
+            <p class="text-sm text-gray-500 mb-2">STEP 1 + 2 + 3A + 3B</p>
+            <h4 class="font-bold text-lg mb-3">フルパッケージ</h4>
+            <p class="text-gray-400 line-through text-sm">通常 57万円</p>
+            <p class="text-3xl font-black text-primary mb-2">55<span class="text-lg">万円</span><span class="text-sm text-gray-500 font-normal ml-2">(税別)</span></p>
+            <span class="inline-block bg-red-100 text-red-600 text-xs font-bold px-3 py-1 rounded-full">2万円OFF</span>
           </div>
         </div>
-        <p class="text-sm text-gray-500 mt-4">※追加受講者：5,000円/人　※eラーニング補講：2,000円/人</p>
+        <p class="text-sm text-gray-500">※追加受講者：¥5,000/人 ｜ e-Learning補講：¥2,000/人</p>
       </div>
 
       <!-- SNS研修 -->
       <div>
         <h3 class="text-lg font-bold mb-4 pl-4 border-l-4 border-primary">SNS・YouTube活用研修</h3>
-        <div class="bg-white overflow-x-auto">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
           <table class="w-full">
             <thead>
               <tr class="bg-dark text-white">
@@ -605,158 +759,352 @@
   </section>
 
   <!-- 助成金セクション -->
-  <section class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="gradient-primary text-white p-10 rounded-lg text-center">
-        <h3 class="text-2xl font-bold mb-4">助成金で最大75%OFF</h3>
-        <p class="mb-6 opacity-90">
-          人材開発支援助成金「事業展開等リスキリング支援コース」を活用可能。<br>
-          申請手続きは提携社労士と連携し、無償でサポートします。
-        </p>
-        <div class="flex justify-center gap-8 flex-wrap mb-6">
-          <div class="text-center">
-            <p class="text-sm opacity-80 mb-1">経費助成（中小企業）</p>
-            <p class="text-4xl font-black">75%</p>
+  <section class="py-16 bg-yellow-50 border-y-4 border-yellow-400">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-8">
+        <span class="inline-block bg-yellow-400 text-dark font-bold px-4 py-2 rounded-full mb-4">助成金で最大75%オフ</span>
+        <h2 class="text-2xl md:text-3xl font-bold">
+          人材開発支援助成金<br class="md:hidden">「事業展開等リスキリング支援コース」対応
+        </h2>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-xl font-bold mb-4">中小企業なら経費の75%が助成</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 text-xl">✓</span>
+                <span>経費助成率：<span class="font-bold text-primary">75%</span>（中小企業）</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 text-xl">✓</span>
+                <span>賃金助成：1時間あたり<span class="font-bold text-primary">1,000円</span></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 text-xl">✓</span>
+                <span>1事業所あたり年間<span class="font-bold text-primary">1億円</span>まで</span>
+              </li>
+            </ul>
           </div>
-          <div class="text-center">
-            <p class="text-sm opacity-80 mb-1">賃金助成</p>
-            <p class="text-4xl font-black">1,000円<span class="text-lg">/時間</span></p>
+          <div class="bg-primary/5 rounded-xl p-6">
+            <p class="text-sm text-gray-600 mb-2">例）基礎＋実践＋応用パッケージ 35万円 × 3人の場合</p>
+            <div class="flex items-end gap-2 mb-2">
+              <span class="text-4xl font-black text-primary">26.25</span>
+              <span class="text-xl font-bold text-primary">万円</span>
+              <span class="text-gray-500">で受講可能</span>
+            </div>
+            <p class="text-sm text-gray-500">（助成金78.75万円適用時）</p>
           </div>
         </div>
-        <div class="bg-white/20 rounded-lg p-4 mt-4 mb-4">
-          <p class="text-sm opacity-80 mb-1">例）基礎＋実践＋応用パッケージ 35万円 × 3人の場合</p>
-          <p class="text-2xl font-black">105万円 → <span class="text-yellow-300">実質 26.25万円</span></p>
+        <div class="mt-6 pt-6 border-t border-gray-200 text-center">
+          <p class="text-gray-600">
+            <span class="font-bold">申請サポートは無償</span>で提供。提携社労士と連携して手続きを代行します。
+          </p>
         </div>
-        <p class="text-sm opacity-80">※業種・企業規模を問わず申請可能です</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- お客様の声 -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-4xl font-bold text-center section-title mb-12">
+        お客様の声
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- 声1 -->
+        <div class="bg-gray-50 rounded-2xl p-6 hover-lift">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center text-2xl">👤</div>
+            <div>
+              <p class="font-bold">製造業 A社</p>
+              <p class="text-sm text-gray-500">代表取締役</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <span class="text-yellow-400 text-lg">★★★★★</span>
+          </div>
+          <p class="text-gray-700 mb-4">
+            「<span class="font-bold">社員がAIを怖がらなくなった</span>のが一番の成果です。研修後、営業部で議事録作成の時間が<span class="text-primary font-bold">月20時間削減</span>できました。」
+          </p>
+          <p class="text-sm text-gray-500">受講コース：基礎＋実践パッケージ</p>
+        </div>
+
+        <!-- 声2 -->
+        <div class="bg-gray-50 rounded-2xl p-6 hover-lift">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center text-2xl">👤</div>
+            <div>
+              <p class="font-bold">小売業 B社</p>
+              <p class="text-sm text-gray-500">経営企画部長</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <span class="text-yellow-400 text-lg">★★★★★</span>
+          </div>
+          <p class="text-gray-700 mb-4">
+            「他社の研修は一般論ばかりでしたが、KMSTさんは<span class="font-bold">うちの業務に合わせてカスタマイズ</span>してくれました。助成金申請も全部やってもらえて助かりました。」
+          </p>
+          <p class="text-sm text-gray-500">受講コース：フルパッケージ</p>
+        </div>
+
+        <!-- 声3 -->
+        <div class="bg-gray-50 rounded-2xl p-6 hover-lift">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center text-2xl">👤</div>
+            <div>
+              <p class="font-bold">IT企業 C社</p>
+              <p class="text-sm text-gray-500">人事部マネージャー</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <span class="text-yellow-400 text-lg">★★★★★</span>
+          </div>
+          <p class="text-gray-700 mb-4">
+            「研修中に実際に<span class="font-bold">FAQボットを完成</span>させられたのは驚きでした。ノーコードでここまでできるとは。今では社内問い合わせの<span class="text-primary font-bold">40%をボットが対応</span>しています。」
+          </p>
+          <p class="text-sm text-gray-500">受講コース：基礎＋実践＋応用パッケージ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 他社比較 -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">
+        他社との違い
+      </h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+          <thead>
+            <tr class="bg-dark text-white">
+              <th class="p-4 text-left"></th>
+              <th class="p-4 text-center bg-primary">
+                <span class="font-bold">KMST</span>
+              </th>
+              <th class="p-4 text-center">一般的な<br>研修会社</th>
+              <th class="p-4 text-center">AI開発会社</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr>
+              <td class="p-4 font-bold">柔軟性</td>
+              <td class="p-4 text-center bg-primary/5"><span class="text-primary font-bold">◎</span><br><span class="text-sm">業種・課題に応じてカスタム可</span></td>
+              <td class="p-4 text-center"><span class="text-gray-400">△</span><br><span class="text-sm text-gray-500">決まったカリキュラムのみ</span></td>
+              <td class="p-4 text-center"><span class="text-gray-400">○</span><br><span class="text-sm text-gray-500">自社都合で画一的</span></td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold">コスト</td>
+              <td class="p-4 text-center bg-primary/5"><span class="text-primary font-bold">◎</span><br><span class="text-sm">非常にリーズナブル</span></td>
+              <td class="p-4 text-center"><span class="text-gray-400">△</span><br><span class="text-sm text-gray-500">比較的高め</span></td>
+              <td class="p-4 text-center"><span class="text-gray-400">×</span><br><span class="text-sm text-gray-500">高額</span></td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold">フォロー体制</td>
+              <td class="p-4 text-center bg-primary/5"><span class="text-primary font-bold">◎</span><br><span class="text-sm">実務に落とし込む支援まで対応</span></td>
+              <td class="p-4 text-center"><span class="text-gray-400">△</span><br><span class="text-sm text-gray-500">研修の支援は限定的</span></td>
+              <td class="p-4 text-center"><span class="text-gray-400">△</span><br><span class="text-sm text-gray-500">実務活用はフォロー外</span></td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold">講師の専門性</td>
+              <td class="p-4 text-center bg-primary/5"><span class="text-primary font-bold">◎</span><br><span class="text-sm">実務に強く課題解決に長ける</span></td>
+              <td class="p-4 text-center"><span class="text-gray-400">○</span><br><span class="text-sm text-gray-500">専門知識は豊富だが実務はやや弱い</span></td>
+              <td class="p-4 text-center"><span class="text-gray-400">○</span><br><span class="text-sm text-gray-500">専門知識は豊富だが実務はやや弱い</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
   <!-- 導入の流れ -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-4">
-      <p class="text-center text-primary text-sm font-bold tracking-widest mb-3">FLOW</p>
+  <section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
       <h2 class="text-2xl md:text-4xl font-bold text-center section-title mb-12">
         導入の流れ
       </h2>
 
-      <div class="flex flex-col md:flex-row justify-between items-start">
-        <div class="flex-1 text-center py-6 relative">
-          <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">1</div>
-          <h4 class="font-semibold">NDA締結</h4>
-          <div class="hidden md:block absolute top-1/2 right-0 w-6 h-0.5 bg-primary -translate-y-1/2"></div>
+      <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+        <div class="flex-1 text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+          <h3 class="font-bold mb-2">NDA締結</h3>
+          <p class="text-sm text-gray-600">秘密保持契約を締結</p>
         </div>
-        <div class="flex-1 text-center py-6 relative">
-          <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">2</div>
-          <h4 class="font-semibold">ヒアリング</h4>
-          <div class="hidden md:block absolute top-1/2 right-0 w-6 h-0.5 bg-primary -translate-y-1/2"></div>
+        <div class="hidden md:block text-4xl text-gray-300 self-center">→</div>
+        <div class="flex-1 text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+          <h3 class="font-bold mb-2">ヒアリング</h3>
+          <p class="text-sm text-gray-600">課題・ニーズを詳しく伺います</p>
         </div>
-        <div class="flex-1 text-center py-6 relative">
-          <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">3</div>
-          <h4 class="font-semibold">ご提案</h4>
-          <div class="hidden md:block absolute top-1/2 right-0 w-6 h-0.5 bg-primary -translate-y-1/2"></div>
+        <div class="hidden md:block text-4xl text-gray-300 self-center">→</div>
+        <div class="flex-1 text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+          <h3 class="font-bold mb-2">ご提案</h3>
+          <p class="text-sm text-gray-600">最適なプランをご提案</p>
         </div>
-        <div class="flex-1 text-center py-6 relative">
-          <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">4</div>
-          <h4 class="font-semibold">ご契約</h4>
-          <div class="hidden md:block absolute top-1/2 right-0 w-6 h-0.5 bg-primary -translate-y-1/2"></div>
+        <div class="hidden md:block text-4xl text-gray-300 self-center">→</div>
+        <div class="flex-1 text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+          <h3 class="font-bold mb-2">ご契約</h3>
+          <p class="text-sm text-gray-600">契約締結・助成金申請サポート</p>
         </div>
-        <div class="flex-1 text-center py-6">
-          <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">5</div>
-          <h4 class="font-semibold">研修実施</h4>
+        <div class="hidden md:block text-4xl text-gray-300 self-center">→</div>
+        <div class="flex-1 text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">5</div>
+          <h3 class="font-bold mb-2">研修実施</h3>
+          <p class="text-sm text-gray-600">日程調整後、研修スタート</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-gray-50">
     <div class="max-w-4xl mx-auto px-4">
-      <p class="text-center text-primary text-sm font-bold tracking-widest mb-3">FAQ</p>
       <h2 class="text-2xl md:text-4xl font-bold text-center section-title mb-12">
         よくある質問
       </h2>
 
       <div class="space-y-4">
-        <div class="bg-gray-50 p-6">
-          <div class="flex items-start gap-3 mb-3">
-            <span class="w-7 h-7 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">Q</span>
-            <p class="font-semibold pt-0.5">助成金の対象になりますか？</p>
+        <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+          <summary class="p-6 cursor-pointer flex justify-between items-center font-bold hover:bg-gray-50">
+            <span>Q. 助成金の対象になりますか？</span>
+            <span class="text-primary text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            <p>はい、対象になることが多いです。多くの企業様が「人材開発支援助成金（事業展開等リスキリング支援コース）」を活用しています。業種・企業規模を問わず、従業員のスキル向上を目的とした研修であれば申請可能です。</p>
           </div>
-          <p class="text-gray-600 pl-10">はい、多くの企業様が「人材開発支援助成金（事業展開等リスキリング支援コース）」を活用されています。業種・規模を問わず申請可能です。</p>
-        </div>
+        </details>
 
-        <div class="bg-gray-50 p-6">
-          <div class="flex items-start gap-3 mb-3">
-            <span class="w-7 h-7 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">Q</span>
-            <p class="font-semibold pt-0.5">助成金の申請は自社で対応しないといけませんか？</p>
+        <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+          <summary class="p-6 cursor-pointer flex justify-between items-center font-bold hover:bg-gray-50">
+            <span>Q. 助成金の申請は自社で対応しないといけませんか？</span>
+            <span class="text-primary text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            <p>いいえ、提携する社労士と連携して申請サポートを<span class="font-bold">無償</span>で提供いたします。「興味はあるが手続きが面倒そう…」という企業様でも、手離れよく制度活用できる仕組みをご用意しています。</p>
           </div>
-          <p class="text-gray-600 pl-10">いいえ、提携する社労士と連携して申請サポートを無償で提供いたします。手続きが面倒という企業様でも、手離れよく制度活用できます。</p>
-        </div>
+        </details>
 
-        <div class="bg-gray-50 p-6">
-          <div class="flex items-start gap-3 mb-3">
-            <span class="w-7 h-7 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">Q</span>
-            <p class="font-semibold pt-0.5">自社に合わせた内容にできますか？</p>
+        <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+          <summary class="p-6 cursor-pointer flex justify-between items-center font-bold hover:bg-gray-50">
+            <span>Q. 自社に合わせた内容にできますか？</span>
+            <span class="text-primary text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            <p>はい、事前ヒアリングで貴社の業務課題を把握し、カリキュラムをカスタマイズします。「何に・どう使うと生産性が上がるか」まで明示します。</p>
           </div>
-          <p class="text-gray-600 pl-10">はい、事前ヒアリングで貴社の業務課題を把握し、カリキュラムをカスタマイズします。「何に・どう使うと生産性が上がるか」まで明示します。</p>
-        </div>
+        </details>
 
-        <div class="bg-gray-50 p-6">
-          <div class="flex items-start gap-3 mb-3">
-            <span class="w-7 h-7 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">Q</span>
-            <p class="font-semibold pt-0.5">eラーニングと対面、どちらがいいですか？</p>
+        <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+          <summary class="p-6 cursor-pointer flex justify-between items-center font-bold hover:bg-gray-50">
+            <span>Q. eラーニングと対面、どちらがいいですか？</span>
+            <span class="text-primary text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            <p>目的によります。基礎知識はeラーニング、実践演習は対面がおすすめです。組み合わせも可能ですので、ご相談ください。</p>
           </div>
-          <p class="text-gray-600 pl-10">目的によります。基礎知識はeラーニング、実践演習は対面がおすすめです。組み合わせも可能ですので、ご相談ください。</p>
-        </div>
+        </details>
 
-        <div class="bg-gray-50 p-6">
-          <div class="flex items-start gap-3 mb-3">
-            <span class="w-7 h-7 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">Q</span>
-            <p class="font-semibold pt-0.5">AI初心者でも大丈夫ですか？</p>
+        <details class="bg-white rounded-xl shadow-md overflow-hidden group">
+          <summary class="p-6 cursor-pointer flex justify-between items-center font-bold hover:bg-gray-50">
+            <span>Q. AI初心者でも大丈夫ですか？</span>
+            <span class="text-primary text-2xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <div class="px-6 pb-6 text-gray-600">
+            <p>はい、全く問題ありません。STEP1の「生成AIリテラシー基礎」では、AIとは何か？という基本から丁寧に解説します。「ChatGPTを触ったことがない」という方でも安心してご参加いただけます。</p>
           </div>
-          <p class="text-gray-600 pl-10">はい、全く問題ありません。STEP1の「生成AIリテラシー基礎」では、AIとは何か？という基本から丁寧に解説します。「ChatGPTを触ったことがない」という方でも安心してご参加いただけます。</p>
-        </div>
+        </details>
       </div>
     </div>
   </section>
 
   <!-- 最終CTA -->
-  <section id="contact" class="py-20 gradient-primary text-white text-center">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-2xl md:text-4xl font-bold mb-4">まずは、話すところから。</h2>
-      <p class="text-lg opacity-90 mb-8 leading-relaxed">
-        「何を学ばせるべきかわからない」でも大丈夫。<br>
-        貴社の課題に合わせた研修プランをご提案します。
+  <section id="contact" class="py-20 gradient-primary relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-10 left-10 w-40 h-40 border-4 border-white rounded-full"></div>
+      <div class="absolute bottom-10 right-10 w-60 h-60 border-4 border-white rounded-full"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+      <h2 class="text-2xl md:text-4xl font-bold text-white mb-6">
+        まずは無料相談から<br>お気軽にご連絡ください
+      </h2>
+      <p class="text-white/90 text-lg mb-8">
+        貴社の課題をヒアリングし、最適な研修プランをご提案します。<br>
+        助成金の活用についてもご説明いたします。
       </p>
-      <a href="https://kmstdc.com/contact" class="cta-pulse inline-flex items-center gap-3 bg-white text-primary text-lg font-bold py-5 px-10 hover:bg-gray-100 transition shadow-xl">
+
+      <a href="https://kmstdc.com/contact" class="cta-pulse inline-flex items-center gap-3 bg-accent hover:bg-orange-600 text-white text-xl font-bold py-5 px-10 rounded-full shadow-2xl transition">
         <span>お問い合わせはこちら</span>
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
       </a>
+
+      <p class="text-white/60 text-sm mt-6">
+        ※ 通常1営業日以内にご連絡いたします
+      </p>
+    </div>
+  </section>
+
+  <!-- 会社概要 -->
+  <section class="py-16 bg-dark text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-xl font-bold mb-8 text-center">会社概要</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div class="space-y-3">
+          <div class="flex">
+            <span class="w-24 text-gray-400">会社名</span>
+            <span>株式会社KMST</span>
+          </div>
+          <div class="flex">
+            <span class="w-24 text-gray-400">代表者名</span>
+            <span>鎌倉 匠汰</span>
+          </div>
+          <div class="flex">
+            <span class="w-24 text-gray-400">設立</span>
+            <span>2023年04月</span>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex">
+            <span class="w-24 text-gray-400">資本金</span>
+            <span>1,000,000円</span>
+          </div>
+          <div class="flex">
+            <span class="w-24 text-gray-400">所在地</span>
+            <span>〒767-0013 香川県三豊市高瀬町下麻1258-1</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 pt-6 border-t border-gray-700">
+        <p class="text-gray-400 text-sm">事業内容</p>
+        <p class="text-sm mt-2">動画マーケティング支援事業 ／ 中小企業向けDX支援事業 ／ 教育・研修事業 ／ 公的支援策申請支援事業</p>
+      </div>
     </div>
   </section>
 
   <!-- フッター -->
-  <footer class="bg-dark text-white py-10">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex items-center gap-2">
-          <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 75L50 15L85 75H15Z" stroke="#E53935" stroke-width="4" fill="none"/>
-            <path d="M28 62L50 28L72 62H28Z" stroke="#E53935" stroke-width="3" fill="none"/>
-            <path d="M38 52L50 35L62 52H38Z" stroke="#E53935" stroke-width="2" fill="none"/>
-          </svg>
-          <span class="font-bold">株式会社KMST</span>
+  <footer class="bg-black text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <div class="flex items-center justify-center gap-2 mb-4">
+        <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+          <span class="text-white font-bold">K</span>
         </div>
-        <p class="text-white/50 text-sm">&copy; 2025 KMST Inc. All Rights Reserved.</p>
+        <span class="font-bold text-lg">KMST</span>
       </div>
+      <p class="text-gray-400 text-sm">
+        Copyright © 2025 KMST inc. All Rights Reserved.
+      </p>
     </div>
   </footer>
 
   <!-- 固定CTA（スマホ） -->
   <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 md:hidden z-50">
-    <a href="#contact" class="block bg-primary hover:bg-primaryDark text-white text-center font-bold py-4 shadow-lg">
-      お問い合わせはこちら
+    <a href="https://kmstdc.com/contact" class="block bg-accent hover:bg-orange-600 text-white text-center font-bold py-4 rounded-full shadow-lg">
+      無料相談を申し込む
     </a>
   </div>
 
